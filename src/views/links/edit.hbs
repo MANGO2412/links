@@ -1,0 +1,17 @@
+<div class="container p-4 h-100">
+    <div class="row  align-items-center">
+        <div class="col-md-4 mx-auto">
+            <div class="card p-2">
+                <form action="/links/edit/{{links.id}}" method="post">
+                    <h1>edit link</h1>
+                    <input type="text" name="title" value="{{links.title}}"  class="form-control mb-3" placeholder="Title" autofocus>
+                    <input type="url" name="url" value="{{links.url}}" class="form-control mb-3" placeholder="Url">
+                    <textarea name="description"  cols="30" rows="10" class="form-control mb-3" placeholder="Description">{{links.description}}</textarea>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="submit">save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
